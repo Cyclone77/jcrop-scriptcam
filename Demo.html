@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="lib/jcrop/jquery.Jcrop.css" >
+     <script src="lib/jquery.min.js" type="text/javascript"></script>
+    <script src="lib/scriptcam/scriptcam.js" type="text/javascript"></script>
+    <script src="lib/scriptcam/swfobject.js" type="text/javascript"></script>
+    <script src="lib/jcrop/jquery.Jcrop.js" type="text/javascript"></script>
+    <script src="demo.js"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="left">
+            <!--照相机-->
+            <div class="vidicon">
+                <div class="photoframe">
+                    <div id="webcam">
+                    </div>
+                </div>
+                <div class="core">
+                    <input type="button" name="name" value="获取照片" class="btn_lz" fn="captureimage" />
+                </div>
+            </div>
+            <!--注意事项-->
+            <div class="matters">
+                <ul>
+                    <li>1、进行人像采集时,不能着制式服装,常戴眼镜的应佩戴眼镜或眼镜框</li>
+                    <li>2、身份证照片为正面头像,拍摄时头和脸不得歪斜和侧转</li>
+                    <li>3、拍摄前居民应该清洗脸上的汗渍和油污,油性皮肤应在脸上擦拭少许粉</li>
+                    <li>4、拍摄时要求穿深色有领衣服;拍照时应脱去帽子,不戴有色眼镜拍照</li>
+                    <li>5、拍照前应将头发整理好,长发者必须露出耳朵,发髻不要盘在头顶;不应佩戴各种饰物;化浓妆不能拍摄</li>
+                </ul>
+            </div>
+        </div>
+        <div class="segmentation">
+        </div>
+        <div class="right">
+            <div class="content">
+                <div class="imgsPanel">
+                    <div class="practical">
+                        <div class="potisOld">
+                            <img src="" id="imgpractical" class="imgOld" alt="" />
+                        </div>
+                    </div>
+                    <div class="segmentation">
+                    </div>
+                    <div class="tailor">
+                        <div class="potisNew">
+                            <img src="" id="imgtailor" class="imgNew" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="core">
+                    <input type="button" value="提交信息" class="btn_lz" fn="submit" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

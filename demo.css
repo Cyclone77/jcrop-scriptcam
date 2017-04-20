@@ -1,0 +1,154 @@
+html
+{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+    margin: 0;
+    background-color: #F7F7F7;
+}
+.layout
+{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 50px 0;
+    min-height: 450px;
+}
+.layout:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.left
+{
+    float: left;
+    width: 500px;
+    height: 100%;
+}
+.segmentation
+{
+    width: 1px;
+    float: left;
+    height: 100%;
+    background-color: #d4d4d4;
+}
+.right
+{
+    width: 100%;
+}
+
+.right .content
+{
+    height: 100%;
+    margin-left: 502px;
+    padding: 50px;
+}
+
+.vidicon
+{
+    text-align: center;
+    margin-top: 50px;
+}
+.photoframe
+{
+    display: inline-block;
+    border: 1px solid #91cabf;
+    margin: 0 auto;
+}
+
+.imgsPanel
+{
+    height: 340px;
+    width: 100%;
+    min-width: 600px;
+    background-color: #FFF;
+}
+.practical
+{
+    float: left;
+}
+.imgsPanel .segmentation
+{
+    margin: 50px 0;
+    height: 240px;
+}
+.tailor
+{
+    float: left;
+}
+.potisOld
+{
+    margin: 50px;
+}
+.imgOld
+{
+    width: 320px;
+    height: 240px;
+}
+.potisNew
+{
+    height: 115px;
+    width: 97px;
+    margin: 100px 40px;
+    overflow: hidden;
+}
+.imgNew
+{
+    width: 320px;
+    height: 240px;
+}
+
+.core
+{
+    margin: 30px;
+    text-align: center;
+}
+.btn_lz
+{
+    background-image: url(../Images/button.png);
+    height: 38px;
+    width: 111px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.matters
+{
+    margin: 50px;
+}
+.matters li
+{
+    font-size: 14px;
+    list-style-type: none;
+}
+.fromEdit
+{
+}
+.field
+{
+    text-align: center;
+}
+.field .txtname
+{
+    display: inline-block;
+    font-size: 16px;
+}
+.divFindUnit
+{
+
+}
+.UnitTree
+{
+    height: 100%;
+}
+#divTreeView
+{
+    height: 100%;
+}
+.field
+{
+    margin-top: 20px;
+}
