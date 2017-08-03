@@ -107,7 +107,7 @@ body
 }
 .btn_lz
 {
-    background-image: url(../Images/button.png);
+    background-color: #0b97c4;
     height: 38px;
     width: 111px;
     border: none;

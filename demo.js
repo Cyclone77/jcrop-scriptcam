@@ -21,12 +21,23 @@ function loadphotograph() {
         //onWebcamReady: onWebcamReady,
         //圆角颜色
         cornerColor: 'e3e5e2',
-        path: 'lib/scriptcam/'
+        path: 'lib/scriptcam/',
+        onWebcamReady: onWebcamReady
     });
     $(".btn_lz").click(function() {
         var fn = this.getAttribute("fn");
         ($.type(window[fn]) == "function") && window[fn]();
     })
+}
+
+function changeCamera() {
+    $.scriptcam.changeCamera($('#cameraNames').val());
+}
+function onWebcamReady(cameraNames, camera, microphoneNames, microphone, volume) {
+    $.each(cameraNames, function(index, text) {
+        $('#cameraNames').append($('<option></option>').val(index).html(text))
+    });
+    $('#cameraNames').val(camera);
 }
 
 //拍照截图
